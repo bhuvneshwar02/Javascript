@@ -23,20 +23,37 @@
 // console.log("Type of numbers array", typeof(numbers));
 
 // array methods in js 
-const arr = [24]
-console.log(arr);
-const numbers = new Array(24); //creates an array og length 240
-console.log(numbers);
+// const arr = [24]
+// console.log(arr);
+// const numbers = new Array(24); //creates an array og length 240
+// console.log(numbers);
 
-const colors = ["green","blue",'black'];
-console.log(colors.length);
-console.log(arr[arr.length-1]) // to get the last element of the array
+// const colors = ["green","blue",'black'];
+// console.log(colors.length);
+// console.log(arr[arr.length-1]) // to get the last element of the array
 
-// toString
-console.log(arr.toString());
+// // toString
+// console.log(arr.toString());
 
-//join -- using operators 
+// //join -- using operators 
 
-console.log(colors.join(" %"));
+// console.log(colors.join(" %"));
 
+
+// some more array methods 
+
+// at()
+
+const numbers = [ 4,5,6,7,3,1];
+console.log(numbers[1]);
+console.log(numbers.at(1));
+
+// pop method --- it removes last emelent  from an array
+// push is used to push element at end of array
+
+const colors = ['red' , 'blue' , 'pink' ];
+const result = colors.pop();
+colors.pop();
+console.log(result);
+console.log(colors);
 
