@@ -49,7 +49,6 @@ console.log(numbers[1]);
 console.log(numbers.at(1));
 
 // pop method --- it removes last emelent  from an array
-// push is used to push element at end of array
 
 const colors = ['red' , 'blue' , 'pink' ];
 const result = colors.pop();
@@ -57,3 +56,27 @@ colors.pop();
 console.log(result);
 console.log(colors);
 
+// push is used to push element at end of array
+ colors.push("green");
+ console.log(colors);
+
+ colors.push("black");
+ console.log(colors);
+
+
+ // shifting
+
+ // shift() --- removes element from begining if an array
+ // return element which has been removed 
+
+ const fruits = ['mangi', 'apple' , 'grapes' ];
+ console.log(fruits);
+
+ console.log(fruits);
+
+ // unshift( -- adds element at begining of an arrsy 
+ // return new length of an array
+const val =
+ fruits.unshift(1);
+ console.log(val);
+ console.log(fruits);
