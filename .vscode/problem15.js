@@ -1,0 +1,38 @@
+// Write a JavaScript function processArray(arr) that takes an array of numbers as input and performs the following tasks:
+
+// Use sort() to sort the array in ascending order.
+// Use reverse() to reverse the sorted array.
+// Use Math.max() to find the maximum value in the array.
+// Use Math.min() to find the minimum value in the array.
+// Use the concept of creating a sorted copy of the array (tosorted()).
+
+function processArray(arr) {
+    console.log("original array:",arr);
+
+    arr.sort((a,b)=> a-b);
+    console.log(arr);
+ 
+    const reversedArray= [...arr].reverse();
+    console.log(reversedArray);
+
+    const maxValue= Math.max(...arr);
+    console.log(maxValue);
+
+    const minValue= Math.min(...arr);
+    console.log(minValue);
+    
+    const sortedCopy= [...arr];
+    console.log(sortedCopy);
+
+    return {
+        originalArray: arr,
+        sortedArray: arr,
+        reversedArray: reversedArray,
+        maxValue: maxValue,
+        minValue: minValue,
+        sortedCopy: sortedCopy
+    };
+
+}
+const arr=[3,1,4,1,5,9,2,6,5];
+console.log(processArray(arr));
