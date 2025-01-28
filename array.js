@@ -183,3 +183,28 @@ console.log(arr);
 
 // compaare funtion
 arr.sort(function(a,b) {return a-b} ); // for asscending order return b-a for decending order
+
+
+
+// array looping 
+
+const fruit = ['mango','apple','guava'];
+
+console.log(fruit);
+
+for(let i=0; i<fruit.length; i++);{
+   console.log(fruit[i]);
+} 
+
+// for...of
+
+for(let fruit of fruits ) {
+    console.log(fruit);
+}
+
+
+// for...in
+
+for(let x in fruit) {
+    console.log(fruit[x]);
+}
